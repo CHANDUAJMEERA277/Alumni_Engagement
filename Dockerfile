@@ -2,7 +2,8 @@ FROM tomcat:10.1-jdk17
 
 RUN rm -rf /usr/local/tomcat/webapps/*
 
-COPY src/main/webapp /usr/local/tomcat/webapps/sample
+COPY src/main/webapp /usr/local/tomcat/webapps/ROOT
+COPY build/classes /usr/local/tomcat/webapps/ROOT/WEB-INF/classes
 
 EXPOSE 8080
 
