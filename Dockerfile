@@ -1,10 +1,5 @@
-FROM tomcat:10.1-jdk17
-
-RUN rm -rf /usr/local/tomcat/webapps/*
-
-COPY src/main/webapp/ /usr/local/tomcat/webapps/ROOT/
-COPY build/classes/ /usr/local/tomcat/webapps/ROOT/WEB-INF/classes/
-
-EXPOSE 8080
-
-CMD ["catalina.sh", "run"]
+Swarm Intelligence is inspired by collective behavior of natural systems
+Ant Colony Optimization (ACO) finds optimal paths using pheromone concept
+It works without central control (decentralized system)
+Useful in routing, logistics, and scheduling problems
+Suitable for dynamic and complex environments
